@@ -4,7 +4,7 @@ echo "Compiling ImageChecker"
 gmcs -r:System.Drawing ImageChecker.cs
 
 echo "Checking for monitor_pics directory"
-if [ ! -d ./monitor_pics ]; then
+if [ ! -d ./monitor_pics]; then
 	echo "Creating monitor_pics"
 	mkdir monitor_pics
 fi
