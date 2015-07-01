@@ -2,8 +2,6 @@ The goal of this project is to monitor my front door, and take pictures when peo
 
 My first attempt at a solution is a continously excecuting bash script. This script uses raspistill to get the images, and it saves them into a folder called "monitor_pics." Then it calls a C# class that compares the two most recent images and deletes the uninteresting ones.
 
-Right now images are declared "different" if 10% of their pixels are 10% different in either hue, brightness, or saturation. I plan to improve on this.
-
 TO RUN:
 1) ensure that mono-complete is installed and the camera is enabled
 2) ensure that ImageChecker.cs and monitor.sh are in the active directory
